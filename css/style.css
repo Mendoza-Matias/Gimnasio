@@ -309,7 +309,9 @@ body {
         display: flex;
         background-color: #000000;
     }
+}
 
-
-
+.copy{
+    text-align: center;
+    color: #303030;
 }
