@@ -67,10 +67,7 @@ body {
     font-weight: 800;
 }
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
+
 
 .menu .navbar ul li a {
     font-size: 18px;
@@ -95,7 +92,7 @@ body {
     display: initial;
 }
 
-@media (min-width:576px) {
+@media (min-width:991px) {
     .menu label {
         display: none;
         cursor: pointer;
@@ -265,35 +262,51 @@ body {
 .links ul li a {
     color: #818181;
 }
+/* mobile */
+.menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #303030;
+    display: none;
+}
 
-@media (max-width:991px) {
+.menu .navbar ul li {
+    width: 100%;
+}
+
+#menu:checked~.navbar {
+    display: initial;
+}
+
+.header-content {
+    padding: 30px;
+}
+
+.header-info {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
 
 
+@media (min-width:991px) {
 
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #303030;
-        display: none;
-    }
+
 
     .menu .navbar ul li {
-        width: 100%;
+        position: relative;
+        float: left;
     }
 
-    #menu:checked~.navbar {
-        display: initial;
+    .menu .navbar {
+        position: relative;
+        display: block;
     }
 
-    .header-content {
-        padding: 30px;
-    }
-
-    .header-info {
-        font-size: 50px;
-        margin-bottom: 5px;
+    .menu .navbar ul {
+        display: flex;
+        background-color: #000000;
     }
 
 
